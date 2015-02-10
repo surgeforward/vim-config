@@ -1,0 +1,90 @@
+snippet bp
+	debugger;
+snippet f
+	function ${1}(${2}) {
+		${3}
+	}
+snippet fn
+	function ${1:name}(${2}) {
+		${3}
+	};
+snippet fa
+	function (${2}) {
+		${3}
+	}${1}
+snippet fore
+	forEach(function(${1:item}) {
+		${3}
+	})${2}
+snippet f:
+	${1:name}: function (${2}) {
+		${3}
+	},
+snippet for
+	for (var ${1:prop} in ${2:expression}) {
+		if (!${3:expression}.hasOwnProperty(${4:prop})) { continue; }
+
+		${5}
+	}
+snippet fori
+	for (var i=0; i<${1:expression}; ++i) {
+		${2}
+	}
+snippet try
+	try {
+		${1}
+	} catch (error) {
+		${2}
+	}
+snippet im
+	import ${1:symbol} from "${2:moduleName}";
+snippet imm
+	import { ${1:symbols} } from "${2:moduleName}";
+snippet if
+	if (${1}) {
+		${2}
+	}
+snippet sw
+	switch (${1:expression}) {
+		case ${2:expression}:
+			${3}
+			break;
+		default:
+			${4}
+	}
+snippet /**
+	/**
+		${1}
+	*/
+snippet /*g
+	/* global ${1:TheGlobal} */
+snippet /*j
+	/* jshint ${1:option}:${2:value} */
+snippet @p
+	@param {${1:type}} ${2:name} ${3:description}
+snippet @op
+	@param {${1:type}} [${2:name}=${3:defaultValue}] ${4:description}
+snippet @prop
+	@property {${1:type}} ${2:name} ${3:description}
+snippet @r
+	@returns {${1:returnType}} ${2:returnDescription}
+snippet clog
+	console.log(${1});
+snippet dp
+	Object.defineProperty(${1:object}, '${2:property}', {
+		get: function () {
+			${3}
+		},
+
+		set: function () {
+			${4}
+		}
+	});
+snippet sett
+	setTimeout (function (${1}) {
+		${2}
+	});
+snippet seti
+	setInterval (function () {
+		${2}
+	}, ${1:intervalInMS});

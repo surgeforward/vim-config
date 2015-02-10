@@ -1,0 +1,22 @@
+snippet d
+	describe("${1}", function() {
+		${2}
+	});
+snippet it
+	it("${1}", function() {
+		${2}
+	});
+snippet b
+	beforeEach( function() {
+		${1}
+	});
+snippet a
+	afterEach( function() {
+		${1}
+	});
+snippet e
+	expect(${1}).${2}
+snippet toe
+	toEqual(${1});
+snippet spy
+	spyOn(${1}, "${2}")${3}
